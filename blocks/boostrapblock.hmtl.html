@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+    <style>
+        /* Custom colors to match your image */
+        .top-white { background: #E5E7EC; height: 8vh; }
+        .top-grey { background: #78808C; height: 14vh; }
+        .left-blue { background: #375A9A; }
+        .right-grey { background: #4E5668; }
+        .bottom-red { background: #490B12; height: 12vh; }
+
+        /* Ensures middle fills remaining height */
+        .middle-row { height: calc(100vh - 8vh - 14vh - 12vh); }
+    </style>
+</head>
+
+<body class="m-0">
+
+    <!-- White top bar -->
+    <div class="container-fluid p-0">
+        <div class="top-white w-100"></div>
+    </div>
+
+    <!-- Grey bar under it -->
+    <div class="container-fluid p-0">
+        <div class="top-grey w-100"></div>
+    </div>
+
+    <!-- Middle section -->
+    <div class="container-fluid p-0">
+        <div class="row g-0 middle-row">
+            <div class="col-4 left-blue"></div>
+            <div class="col-8 right-grey"></div>
+        </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="container-fluid p-0">
+        <div class="bottom-red w-100"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refined Color Block Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #000; 
+        }
+
+        /* White top strip */
+        .top-white {
+            background-color: #E5E7EC;     
+             height: 8vh;                   
+        }
+
+        /* Wide grey bar */
+        .top-grey {
+            background-color: #78808C;     
+            height: 14vh;                  
+        }
+
+        /* Middle side-by-side blocks */
+        .middle {
+            display: flex;
+            flex: 1;                       
+        }
+
+        .left {
+            background-color: #375A9A;     
+            width: 32%;                    
+        }
+
+        .right {
+            background-color: #4E5668;     
+            flex: 1;
+        }
+
+        /* Bottom maroon strip */
+        .bottom {
+            background-color: #490B12;     
+            height: 12vh;                  
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-white"></div>
+    <div class="top-grey"></div>
+
+    <div class="middle">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <div class="bottom"></div>
+
+</body>
+</html>
